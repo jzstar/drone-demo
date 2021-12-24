@@ -12,7 +12,6 @@ steps:
     - pwd
     - ls
     - cp app.go main.go
-    - go mod init
     - CGO_ENABLED=0 GOOS=linux go build main.go
     - ./main
 
